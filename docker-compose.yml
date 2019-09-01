@@ -1,0 +1,9 @@
+version: '3'
+services:
+  openresty-php:
+    build: .
+    image: a2way/openresty-php
+    ports:
+      - 8000:80
+    env_file:
+      - ./env/main.env
