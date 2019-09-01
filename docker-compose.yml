@@ -2,7 +2,7 @@ version: '3'
 services:
   openresty-php:
     build: .
-    image: a2way/openresty-php
+    image: a2way/docker-base-openresty-php
     ports:
       - 8000:80
     env_file:
