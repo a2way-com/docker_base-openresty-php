@@ -1,6 +1,6 @@
 # A2Way Docker-Base OpenResty PHP
 
-https://github.com/a2way-com/docker_base-openresty-php
+https://hub.docker.com/r/a2way/docker_base-openresty-php
 
 ## Usage
 
