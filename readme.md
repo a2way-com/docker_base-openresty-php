@@ -5,6 +5,7 @@ https://hub.docker.com/r/a2way/docker_base-openresty-php
 ## Usage
 
 - Supply the address of a PHP-FPM container into an environment variable named `PHP_FPM_HOST`.
+- Supply the address of a web server with static content (If any.) into an environment variable named `STATIC_CONTENT_HOST`.
 - Copy application files into the `/app` directory.
 - Send requests to port `80`.
 
@@ -17,5 +18,8 @@ https://hub.docker.com/r/a2way/docker_base-openresty-php
           - 8000:80
         environment:
           - PHP_FPM_HOST=my-php-fpm
+          - STATIC_CONTENT_HOST=mt-static-content
       my-php-fpm:
         image:a2way/docker_base-php-fpm-laravel:<version>
+      mt-static-content:
+        image:nginx:<version>
