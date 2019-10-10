@@ -18,8 +18,8 @@ https://hub.docker.com/r/a2way/docker_base-openresty-php
           - 8000:80
         environment:
           - PHP_FPM_HOST=my-php-fpm
-          - STATIC_CONTENT_HOST=mt-static-content
+          - STATIC_CONTENT_HOST=my-static-content
       my-php-fpm:
         image:a2way/docker_base-php-fpm-laravel:<version>
-      mt-static-content:
+      my-static-content:
         image:nginx:<version>
