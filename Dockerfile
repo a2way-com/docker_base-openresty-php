@@ -1,3 +1,3 @@
-FROM openresty/openresty:1.15.8.2-1-alpine
+FROM openresty/openresty:1.21.4.1-6-alpine
 WORKDIR /app
 COPY ./fs/ /
